@@ -1,4 +1,4 @@
-import mongoose, { Schema } from "mongoose";
+import mongoose from "mongoose";
 
 const PostSchema = new mongoose.Schema({
     title: {
@@ -15,6 +15,10 @@ const PostSchema = new mongoose.Schema({
         default: []
     },
     viewsCount: {
+        type: Number,
+        default: 0
+    }, 
+    commentsCount: {
         type: Number,
         default: 0
     }, 
